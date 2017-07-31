@@ -1,3 +1,3 @@
-#Welcome to my first project 
+Welcome to my first project 
 
-Stream 1 with (http:://codeinstitute.net) 
+Stream 1 with Code Institute 
