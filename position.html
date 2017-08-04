@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+        <title>Positioning Challenge</title>
+        <style>
+            #container {
+                background-color: rebeccapurple;
+                height: 200px;
+                width: 960px;
+                border-radius: 20px;
+                margin-right: auto; 
+                margin-left: auto;
+                font-size: 0;
+                position: relative;
+                top: 90px;
+                
+                
+            }
+            .box {
+                height: 180px;
+                width: 220px;
+                background-color: coral;
+                display: inline-block;
+                margin: 10px;
+                border-radius: 20px;
+            }
+            #box1 {
+                position: relative;
+                top: 270px;
+            }
+            #box2 {
+                position: relative;
+                top: 180px;
+            }
+            #box4 {
+                position: relative;
+                bottom: 90px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+        </div>
+    </body>
+</html>
