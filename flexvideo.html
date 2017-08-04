@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <title>Flexbox Video</title>
+        <style>
+            header {
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .flex {
+                border: 5px solid lightcoral;
+                height: 300px;
+                width: 600px;
+                border-radius: 20px;
+                margin-right: auto; 
+                margin-left: auto;
+                
+                padding: 8px;
+                
+                
+                
+            }
+            .box {
+                
+                margin: 5px;
+                background-color: coral;
+                display: block;
+                line-height: 20px;
+                font-weight: 600;
+                text-align: center;
+                width: 150px;
+
+            }
+
+           .box:nth-child(2) {
+                align-self: stretch;
+                height: auto
+           }
+            
+
+            .flex {
+                height: 800px;
+                display: flex;
+                
+            }
+
+            #box1 {
+                
+            }
+            #box2 {
+                
+            }
+            #box3 {
+               
+            }
+
+            #box4 {
+               
+            }
+    
+    
+        </style>
+    </head>
+    <body>
+        <header>Flex Video</header>
+        <div class="flex">
+            <div class="box" id="box1"><h1>1</h1></div>
+            <div class="box" id="box2"><h1>2</h1></div>
+            <div class="box" id="box3"><h1>3</h1></div>
+            <div class="box" id="box4"><h1>4</h1></div>
+            <div class="box" id="box5"><h1>5</h1></div>
+        </div>
+    </body>
+</html>
+        
