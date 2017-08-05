@@ -9,8 +9,8 @@
         margin-right: auto; 
      margin-left: auto;
      width: 960px;
-     
-     padding: 10px;
+     margin-top: 130px;
+      
      border-radius: 10px;
      font-size: 0;
      
@@ -28,14 +28,14 @@
      font-size: 14px;
      text-align: center;
      padding: 30px 0;
-    
+     
    
      
    
 
      
  }
-  #side {
+  .side {
       -webkit-box-sizing: border-box;
 	  -moz-box-sizing: border-box;
       display: inline-block;
@@ -51,7 +51,7 @@
       
      }
   
-  #cont {
+  .cont {
       -webkit-box-sizing: border-box;
 	  -moz-box-sizing: border-box;
       display: inline-block;
@@ -83,12 +83,19 @@
       
   }
 
+  #header {
+      border: darkmagenta dotted 2px;
+      position: fixed;
+      top: 0px;
+      z-index: 100;
+  }
+
   </style>
 </head>
 <body>
   <div id="container">
-    <div class="box"><h1>Header</h1></div>
-    <div class="box" id="side"><h2>Sidebar</h2>
+    <div class="box" id="header"><h1>Header</h1></div>
+    <div class="box side"><h2>Sidebar</h2>
         <p align="left">Aenean non lacus tempus, consectetur elit quis, fringilla metus.
              Morbi sit amet tempus justo. Maecenas in cursus velit.
               Vestibulum nec sem dictum velit egestas vulputate. 
@@ -97,7 +104,31 @@
             </p>
             <img src="arrow.png" alt="Arrow" id="sideLinkToTop">
     </div>
-    <div class="box" id="cont"><h2>Content</h2>
+    <div class="box cont"><h2>Content</h2>
+        <p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Mauris sapien ante, mattis ac dui sit amet, congue laoreet magna. 
+             Ut feugiat, ipsum sed semper facilisis, lacus sapien lobortis erat,
+              eu cursus libero libero non neque. Aliquam semper leo neque, 
+              eu consequat eros ullamcorper vitae. Donec fermentum, erat feugiat posuere mollis,
+               nibh mauris placerat nisl, ut tristique mi arcu at mi. Fusce vestibulum porttitor feugiat.
+                Nulla facilisi. Curabitur vel leo diam. Cras id quam sit amet augue vulputate viverra.
+                 Fusce iaculis massa arcu, viverra cursus enim condimentum ut. 
+                 Sed faucibus, ante a accumsan ullamcorper, turpis sem imperdiet neque, 
+                 eget consequat erat risus quis ante.
+
+        </p>
+        <img src="arrow.png" alt="arrow" id="linkToTop">
+    </div>
+        <div class="box side" ><h2>Sidebar</h2>
+        <p align="left">Aenean non lacus tempus, consectetur elit quis, fringilla metus.
+             Morbi sit amet tempus justo. Maecenas in cursus velit.
+              Vestibulum nec sem dictum velit egestas vulputate. 
+              Maecenas sit amet venenatis risus.
+               Aliquam libero nulla, commodo vel mauris nec, feugiat tempus nunc. 
+            </p>
+            
+    </div>
+    <div class="box cont"><h2>Content</h2>
         <p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
              Mauris sapien ante, mattis ac dui sit amet, congue laoreet magna. 
              Ut feugiat, ipsum sed semper facilisis, lacus sapien lobortis erat,
