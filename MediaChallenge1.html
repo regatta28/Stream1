@@ -5,61 +5,64 @@
     <title>Media Challenge 1</title>
 
     <style>
-        #img1 {
-            float: left;
-            margin: 5px;
-        }
-        #img2 {
-            float: right;
-            margin: 5px;
-        }
-        .content {
-            display: inline-block;
-            
-            width: 50%;
-            
-        }
-        #place {
-            float: left;
-        }
-        p{
-            margin: 10px;
-        }
+        
+
+         div
+           {
+           
+           display: inline-block;
+           vertical-align: top;
+           width: 500px;
+           margin: 0 auto 0 auto;
+           padding: 10px;
+           border: 2px solid black;
+           background-color: plum;
+           border-radius: 10px;
+           }
+       
+         img {
+             float: right;
+             margin: 0 20px 20px 20px;
+         }
+         .img2 {
+             -webkit-filter: sepia(1);
+         }
+         .img3 {
+             -webkit-filter: blur(1px);
+         }
+         .img4 {
+             -webkit-filter: grayscale(1) opacity(0.5);
+         }
        
     </style>
     
   </head>
 <body>
     
-     <div class="content" id="place">
-          
-         <h2>Image No.1</h2>
-         <img src="photo1.jpeg" alt="Lake and Forest" height="250px" width="250px" id="img1">
-         <p>Aenean non lacus tempus, consectetur elit quis, fringilla metus.
-             Morbi sit amet tempus justo. Maecenas in cursus velit.
-              Vestibulum nec sem dictum velit egestas vulputate. 
-              Maecenas sit amet venenatis risus.
-               Aliquam libero nulla, commodo vel mauris nec, feugiat tempus nunc. </p>
-         <p>Aenean non lacus tempus, consectetur elit quis, fringilla metus.
-             Morbi sit amet tempus justo. Maecenas in cursus velit.
-              Vestibulum nec sem dictum velit egestas vulputate. 
-              Maecenas sit amet venenatis risus.
-               Aliquam libero nulla, commodo vel mauris nec, feugiat tempus nunc.</p>
+     
+     <div class="content">
+         
+         <h2>Original</h2>
+         <img src="photo2.jpeg" alt="Mountain and Lake" height="250px" width="250px">
+        
      </div>
      <div class="content">
          
-         <h2>Image No.2</h2>
-         <img src="photo2.jpeg" alt="Mountain and Lake" height="250px" width="250px" id="img2">
-         <p>Aenean non lacus tempus, consectetur elit quis, fringilla metus.
-             Morbi sit amet tempus justo. Maecenas in cursus velit.
-              Vestibulum nec sem dictum velit egestas vulputate. 
-              Maecenas sit amet venenatis risus.
-               Aliquam libero nulla, commodo vel mauris nec, feugiat tempus nunc. </p>
-         <p>Aenean non lacus tempus, consectetur elit quis, fringilla metus.
-             Morbi sit amet tempus justo. Maecenas in cursus velit.
-              Vestibulum nec sem dictum velit egestas vulputate. 
-              Maecenas sit amet venenatis risus.
-               Aliquam libero nulla, commodo vel mauris nec, feugiat tempus nunc. </p>
+         <h2>Sepia</h2>
+         <img src="photo2.jpeg" alt="Mountain and Lake" height="250px" width="250px" class="img2">
+        
+     </div>
+     <div class="content">
+         
+         <h2>Blur</h2>
+         <img src="photo2.jpeg" alt="Mountain and Lake" height="250px" width="250px" class="img3">
+        
+     </div>
+     <div class="content">
+         
+         <h2>Multi</h2>
+         <img src="photo2.jpeg" alt="Mountain and Lake" height="250px" width="250px" class="img4">
+        
      </div>
     
 </body>
