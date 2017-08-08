@@ -20,9 +20,10 @@
                position: relative;
            }
            #rotate {
-               transform: rotate(45deg);
+               transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg) perspective(1000px);
                position: relative;
                top: 100px;
+
            }
            #scaled {
                position: relative;
@@ -34,6 +35,31 @@
                position: relative;
                top: 150px;
                transform: skew(20deg) rotate(20deg);
+           }
+           #box:hover {
+               height: 150px;
+               width: 300px;
+               background-color: red;
+               transition: width 5s, height 5s, background-color 5s;
+           }
+           #translate:hover {
+               background-color: red;
+               transition: background-color 5s, ease-in-out;
+           }
+           #rotate:hover {
+               transform: rotate(100deg);
+               background-color: red;
+               transition: 5s; 
+           }
+           #scaled:hover {
+               background-color: red;
+               transform: scale(2.5, 1.5);
+               transition-duration: 5s, 5s;
+           }
+           #skewed:hover {
+               transform: skew(40deg) rotate(40deg);
+               background-color: red;
+               transition: skew(40deg) rotate(40deg) 5s, background-color 5s;
            }
             
         </style>
