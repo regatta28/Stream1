@@ -1,0 +1,19 @@
+
+
+#translate {
+    animation: myframes 2s ease-in-out 3s 5 alternate;
+}
+@keyframes myframes {
+    0% {
+        width: 300px;}
+    50%, 70% {
+        background-color: green;
+        width: 400px;
+    }
+    
+    100% {
+        width: 500px;
+        background: hotpink;
+    }
+
+}
