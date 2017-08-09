@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang= "en">
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
     <title>Layout Challenge</title>
-    <link rel="stylesheet" href="layoutChallengeCSS.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 400px)" href="layoutChallengeCSS.css" type="text/css"/>
     <style type="text/css">
  
    #container {
@@ -95,7 +95,23 @@
       
       background-size: contain cover; 
   }
-
+    @media screen and (min-width: 400px) {
+        p {
+            font-size: 20px;
+        }
+        .box {
+            text-align: left;
+            background-color: #eee;
+            border-color: white;
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .box {
+            border: solid darkorchid 5px;
+            color: white;
+            background-color: cadetblue;
+        }
+    }
 
   </style>
 </head>
