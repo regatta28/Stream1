@@ -5,10 +5,16 @@
 		<title>Flexbox</title>
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' type='text/css' href='reset.css'>
 		<style type="text/css">
+		body {
+			background-color: #F5D76E;
+			color: white;
+			
+		}
 		nav{
 			font-family: roboto;
-			background-color: #eee;
+			
 			margin: 30px auto; 
 			width: 100%;
 			height: 500px;
@@ -21,14 +27,14 @@
 				
 		a{
 			text-decoration: none;
-			color: black;
+			color: white;
 			flex:.5;
 			height: 30px;
 			font-family: Dosis;
 			padding:10px;
 			text-align: center;
 			font-size: 2em;
-			border:1px solid black;
+			border-bottom:1px solid white;
 
 		}
 		#logoNav{
@@ -36,11 +42,36 @@
 			font-weight: bold;
 			
 			}
+		#landing {
+			font-family: Dosis;
+			font-size: 3.5em;
+			color: black;
+			text-align: center;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+			
+		}
+		h2 {
+			margin-bottom: 20px;
+		}
+		img {
+			width: 100%;
+			height: 300px;
+			
+			
+		}
 
 		@media screen and (min-width: 700px){
+			body {
+				color: white;
+			}
 			nav{
 				display: flex;
 				flex-direction: row;
+				height: 80px;
+				
 				
 			}
 			a{
@@ -50,8 +81,17 @@
 			#logoNav{
 				flex: 2;
 				text-align: left;
+				font-size: 2.5em;
+				margin-left: 10px;
 				
 			}
+			#landing {
+				display: flex;
+				flex-direction: row;
+				width: 80%;
+				margin: 100px auto;
+			}
+			
 		}
 
 		</style>
@@ -59,16 +99,18 @@
 <body>
 
 	<nav>
-		
-			<a id="logoNav">CODE INSTITUTE</a>
-			<a href="#">Home</a>
-			<a href="#">Projects</a>
-			<a href="#">About</a>
-			<a href="#">Contact</a>
-			<a href="#">Photos</a>
-		
-
+		<a id="logoNav">CHOCOBLOCK</a>
+		<a href="#">Home</a>
+		<a href="#">Projects</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+		<a href="#">Photos</a>
 	</nav>
+	<section id='landing'>
+		<div><h2>Make Creative Clever Fun Apps. Simple.</h2></div>
+		<div><img src='laptop.png' alt='Laptop'></div>
+	</section>
+
 
 </body>
 </html>
