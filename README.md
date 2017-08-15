@@ -1,3 +1,4 @@
-Welcome to my first project 
+Welcome to my first project covering HTML and CSS, Stream 1 with Code Institute.
 
-Stream 1 with Code Institute 
+
+
